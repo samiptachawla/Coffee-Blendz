@@ -1,0 +1,342 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    font-size: 120%; 
+}
+
+
+.logo img {
+    max-width: 100px; 
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+ header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+nav {
+        margin-top: 20px;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #EBE3D5;
+    height: 600px;
+}
+
+.text {
+    width: 50%;
+    font-size: 30px;
+}
+
+.text h1 {
+    font-size: 35px;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.coffee-options {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coffee-options h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.coffee-option {
+    margin-bottom: 20px;
+    width: 20%; 
+    text-align: center;
+    box-sizing: border-box; 
+    padding: 0 10px; 
+}
+
+.coffee-option a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 20px; 
+    display: block; 
+    margin-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.coffee-option img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-option img[alt="Cappuccino"]{
+    height: 180px;
+    width: 272px;
+}
+
+.coffee-option img[alt="Latte"]{
+    height: 183px;
+    width: 273px;
+}
+
+.coffee-option img[alt="Cold Brew"]{
+    height: 183px;
+    width: 273px;
+}
+
+.coffee-option img[alt="Macchiato"],
+.coffee-option img[alt="Mocha"],
+.coffee-option img[alt="Flat White"],
+.coffee-option img[alt="Affogato"],
+.coffee-option img[alt="Turkish Coffee"] {
+    height: 183px;
+    width: 273px;
+}
+
+.coffee-option:hover img {
+    transform: scale(1.1); 
+}
+
+@media screen and (max-width: 768px) {
+    .coffee-option {
+        width: 40%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .coffee-option {
+        width: 80%; 
+    }
+}
+
+
+.turkish-coffee-bg {
+    background-image: url('https://th.bing.com/th/id/OIP.GwmLFI_FI7toaevpujL03wHaLH?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center; 
+}
+
+.turkish-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+}
+
+.mocha-bg {
+    background-image: url('https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png?quality=90&resize=556,505');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.mocha-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+}
+
+.macchiato-bg {
+    background-image: url('https://www.comunicaffe.com/wp-content/uploads/2016/10/caramel-macchiato_830x550.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.macchiato-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+}
+
+.latte-bg {
+    background-image: url('https://th.bing.com/th/id/OIP.7UzUBn-WzEDaq9d-kKT6GAHaLH?rs=1&pid=ImgDetMain');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.latte-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+}
+
+.americano-bg {
+    background-image: url('https://www.homegrounds.co/wp-content/uploads/2019/08/americano-1024x682.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.americano-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+}
+
+.espresso-bg {
+    background-image: url('https://www.roastycoffee.com/wp-content/uploads/Single-Shot-Espresso.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.espresso-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+}
+
+.affogato-bg {
+    background-image: url('https://static01.nyt.com/images/2021/08/15/magazine/affogato/affogato-threeByTwoMediumAt2X-v2.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.affogato-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+}
+
+.cappuccino-bg {
+    background-image: url('https://th.bing.com/th/id/OIP.zBhnw1zH8lnSABXPCORfQgHaEK?rs=1&pid=ImgDetMain');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.cappuccino-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+}
+
+.coldbrew-bg {
+    background-image: url('https://fedandfit.com/wp-content/uploads/2020/05/cold-brew-coffee-3.png');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.coldbrew-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+}
+
+.flat-white-bg {
+    background-image: url('https://cdn.shopify.com/s/files/1/0137/1655/3786/files/how_to_make_a_flat_white.jpg?v=1612550904');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.flat-white-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+}
+
+.box1{
+    background-color: #333;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.text1{
+
+padding: 10px;
+border: 1px solid #ccc;
+flex: 1;
+}
+
+.text2{
+text-align: center;
+padding: 10px;
+border: 1px solid #ccc;
+flex: 1;
+}
+
+.text3{
+text-align: right;
+padding: 10px;
+border: 1px solid #ccc;
+flex: 1;
+padding: 22px;
+padding-right: 90px;
+}
+
+.about1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #EBE3D5;
+    height: 600px;
+}
+
+.text {
+    flex: 1;
+}
+
+.imgabout {
+   width: 50%;
+}
+
+.textabout{
+    width: 50%;
+}
+
+.text-about {
+    background-color: #B0A695;
+    width:100%
+}
+
+.contact{
+    background-color: #B0A695;
+}
